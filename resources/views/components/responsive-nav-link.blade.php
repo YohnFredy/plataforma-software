@@ -1,9 +1,18 @@
 @props(['active'])
 
 @php
-$classes = ($active ?? false)
-            ? 'block w-full ps-3 pe-4 py-2 border-l-4 border-indigo-400 dark:border-indigo-600 text-start text-base font-medium text-indigo-700 dark:text-indigo-300 bg-indigo-50 dark:bg-indigo-900/50 focus:outline-none focus:text-indigo-800 dark:focus:text-indigo-200 focus:bg-indigo-100 dark:focus:bg-indigo-900 focus:border-indigo-700 dark:focus:border-indigo-300 transition duration-150 ease-in-out'
-            : 'block w-full ps-3 pe-4 py-2 border-l-4 border-transparent text-start text-base font-medium text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 hover:border-gray-300 dark:hover:border-gray-600 focus:outline-none focus:text-gray-800 dark:focus:text-gray-200 focus:bg-gray-50 dark:focus:bg-gray-700 focus:border-gray-300 dark:focus:border-gray-600 transition duration-150 ease-in-out';
+    $classes =
+        $active ?? false
+            ? 'block w-full ps-3 pe-4 py-1 border-l-8 border-palette-200  text-start text-base font-medium text-white bg-gradient-to-r from-palette-300  to-palette-150  focus:outline-none focus:text-white focus:bg-palette-300 focus:border-palette-150  
+            dark:border-neutral-500 dark:focus:border-neutral-300 
+            dark:text-neutral-300 dark:focus:text-neutral-100
+            dark:bg-gradient-to-r dark:from-neutral-900  dark:to-neutral-950
+            transition duration-150 ease-in-out'
+            : 'block w-full ps-3 pe-4 py-1 border-l-8 border-transparent text-start text-base font-medium text-palette-300 hover:text-palette-200  hover:bg-neutral-200  hover:border-palette-200  focus:outline-none focus:text-palette-400  focus:bg-nuetral-200  focus:border-palette-150 
+            dark:text-neutral-300 dark:hover:text-neutral-100
+             dark:hover:bg-neutral-900 dark:hover:border-neutral-400
+            dark:focus:text-neutral-300 dark:focus:bg-neutral-950 dark:focus:border-neutral-300
+            transition duration-150 ease-in-out';
 @endphp
 
 <a {{ $attributes->merge(['class' => $classes]) }}>

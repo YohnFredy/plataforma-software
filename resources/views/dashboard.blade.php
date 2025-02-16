@@ -8,6 +8,13 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-xl sm:rounded-lg">
+
+                <div class=" grid grid-cols-2 p-4">
+                    <div class=" col-span-1">
+                        <x-floating-input name="defer" label="luis" /> 
+                    </div>
+
+                </div>
                 <x-welcome />
             </div>
         </div>

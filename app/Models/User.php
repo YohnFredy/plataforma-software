@@ -4,6 +4,8 @@ namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Fortify\TwoFactorAuthenticatable;
@@ -26,7 +28,10 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
+        'username',
         'name',
+        'last_name',
+        'dni',
         'email',
         'password',
     ];
@@ -63,5 +68,28 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
+    }
+    public function userData(): HasOne
+    {
+        return $this->hasOne(UserData::class);
+    }
+
+    public function binary()
+    {
+        return $this->hasOne(Binary::class);
+    }
+
+    public function binaryTotal()
+    {
+        return $this->hasOne(BinaryTotal::class);
+    }
+
+    public function unilevel()
+    {
+        return $this->hasOne(unilevel::class);
+    }
+
+    public function unilevelTotal(){
+        return $this->hasOne(UnilevelTotal::class);
     }
 }
