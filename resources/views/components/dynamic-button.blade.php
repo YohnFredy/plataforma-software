@@ -3,7 +3,7 @@
 @php
     // Definimos las clases de diseño base para el botón
     $baseClasses =
-        'text-center px-3 py-2  rounded-md font-semibold text-xs uppercase tracking-widest   disabled:opacity-70 focus:outline-none focus:ring-2 focus:ring-offset-2 transition ease-in-out duration-150 dark:bg-neutral-600 dark:hover:bg-neutral-700 dark:text-neutral-100 dark:hover:text-white  dark:focus:ring-neutral-800 dark:focus:ring-offset-neutral-500';
+        'text-center px-3 py-2  rounded-md font-semibold text-xs uppercase tracking-widest   disabled:opacity-70 focus:outline-none focus:ring-2 focus:ring-offset-2 transition ease-in-out duration-150';
 
     // Definimos las clases de color y efecto hover basadas en el color proporcionado
     $colorClasses = match ($color) {

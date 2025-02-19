@@ -40,12 +40,12 @@
     height: 10px; /* Altura de los conectores */
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     .tree li::before,
     .tree li::after {
         border-top: 2px solid #D4D4D4;
     }
-}
+} */
 
 .tree li::after {
     right: auto; /* Restablece la posición del conector */
@@ -53,11 +53,11 @@
     border-left: 1px solid #212a33; /* Agrega línea para conectar */
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     .tree li::after {
-        border-left: 1px solid #D4D4D4; /* Agrega línea para conectar */
+        border-left: 1px solid #D4D4D4; 
     }
-}
+} */
 
 /* Elimina conectores donde el elemento no tiene hermanos */
 .tree li:only-child::after,
@@ -82,11 +82,11 @@
     border-radius: 0 5px 0 0; /* Agrega bordes redondeados */
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     .tree li:last-child::before {
-        border-right: 1px solid #D4D4D4; /* Añade línea para conectar */
+        border-right: 1px solid #D4D4D4; 
     }
-}
+} */
 
 .tree li:first-child::after {
     border-radius: 5px 0 0 0; /* Agrega bordes redondeados */
@@ -103,11 +103,11 @@
     height: 10px; /* Altura de los conectores */
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     .tree ul ul::before {
-        border-left: 1px solid #D4D4D4; /* Estilo de línea para los conectores */
+        border-left: 1px solid #D4D4D4; 
     }
-}
+} */
 
 /* Estilos para los enlaces dentro de los elementos del árbol */
 .tree li a {
@@ -125,13 +125,13 @@
 }
 
 /* Estilos para los enlaces dentro de los elementos del árbol */
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     .tree li a {
-        box-shadow: 5px 5px 10px #000000; /* Sombra oscura para modo dark */
-        border-left: 6px solid #D4D4D4; /* Borde más claro para modo dark */
-        background: #262626; /* Fondo oscuro para modo dark */
+        box-shadow: 5px 5px 10px #000000; 
+        border-left: 6px solid #D4D4D4; 
+        background: #262626; 
     }
-}
+} */
 
 /* Estilos para los enlaces pequeños dentro del árbol */
 .tree li a.small {
@@ -147,33 +147,33 @@
     border-left: 6px solid #254663; /* Cambio de color del borde izquierdo */
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     .tree li a:hover,
     .tree li a:hover + ul li a {
-        box-shadow: -5px -2px 10px #000000; /* Sombra invertida */
-        border-radius: 10px; /* Bordes redondeados más grandes */
-        background: #171717; /* Fondo blanco */
-        border-left: 6px solid #F5F5F5; /* Cambio de color del borde izquierdo */
+        box-shadow: -5px -2px 10px #000000; 
+        border-radius: 10px; 
+        background: #171717; 
+        border-left: 6px solid #F5F5F5; 
     }
-}
+} */
 /* Estilos de conectores para elementos flotantes */
 .tree li a:hover + ul li::after,
 .tree li a:hover + ul li::before,
 .tree li a:hover + ul li:last-child::before,
 .tree li a:hover + ul::before,
 .tree li a:hover + ul ul::before {
-    border-color: #171717; /* Cambia el color del conector */
+    border-color: #171717; 
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     .tree li a:hover + ul li::after,
     .tree li a:hover + ul li::before,
     .tree li a:hover + ul li:last-child::before,
     .tree li a:hover + ul::before,
     .tree li a:hover + ul ul::before {
-        border-color: #F5F5F5; /* Cambia el color del conector */
+        border-color: #F5F5F5; 
     }
-}
+} */
 /* #FAFAFA
 #F5F5F5
 #E5E5E5

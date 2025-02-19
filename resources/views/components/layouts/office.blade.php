@@ -26,8 +26,8 @@
 <body class="font-sans antialiased">
     {{-- lateral menu --}}
     <div id="sidebar" class="sidebar bg-gradient-to-r from-palette-150  to-palette-200 text-neutral-100
-    dark:bg-gradient-to-r dark:from-neutral-700  dark:to-neutral-800 ">
-        <div class="sidebar-header shadow-md shadow-palette-300 dark:shadow-neutral-950 h-14 flex items-center">
+        ">
+        <div class="sidebar-header shadow-md shadow-palette-300  h-14 flex items-center">
             <a href="{{ route('office.index') }}" class="flex items-center text-xl">
                 <i class="ml-5 mr-2 fas fa-building"></i>
                 <span class="text"> <span class="elephant-text">FORNUVI</span>
@@ -37,20 +37,20 @@
     </div>
 
     {{-- header_bar --}}
-    <div id="header_bar" class="header-bar bg-white shadow-md shadow-palette-300 dark:shadow-none
-    dark:bg-neutral-800  dark:border-l dark:border-neutral-900 ">
+    <div id="header_bar" class="header-bar bg-white shadow-md shadow-palette-300 
+        ">
         <button id="sidebarToggleButton" class="text-xl text-palette-400 hover:text-palette-200 
-        dark:text-neutral-300 dark:hover:text-neutral-50 cursor-pointer"><i
+          cursor-pointer"><i
                 class="fas fa-bars"></i></button>
         @include('office.header-bar')
     </div>
 
     <div id="main_content" class="main-content">
-        <div class="inner-content bg-neutral-50 text-palette-300 dark:bg-neutral-950 dark:text-red-300 p-6">
+        <div class="inner-content bg-neutral-50 text-palette-300   p-6">
             {{ $slot }}
         </div>
 
-        <footer class=" text-neutral-200 py-16 bg-palette-300 dark:bg-neutral-900">
+        <footer class=" text-neutral-200 py-16 bg-palette-300 ">
             <div class="container mx-auto px-6 lg:px-8">
                 <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
                     <div>

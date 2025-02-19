@@ -1,4 +1,4 @@
-<footer class=" text-neutral-300 py-16 bg-palette-300 dark:bg-neutral-800 ">
+<footer class=" text-neutral-300 py-16 bg-palette-300  ">
     <div class="container mx-auto px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
             <div>
@@ -36,7 +36,7 @@
                 </div>
             </div>
         </div>
-        <div class="border-t border-palette-100 mt-12 pt-8 text-center text-sm">
+        <div class="border-t border-neutral-100 mt-12 pt-8 text-center text-sm">
             &copy; 2024 fornuv1. Todos los derechos reservados.
         </div>
     </div>

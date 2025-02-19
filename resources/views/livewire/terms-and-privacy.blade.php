@@ -1,6 +1,6 @@
 <div>
 
-    <div class=" text-palette-300 dark:text-neutral-400">
+    <div class=" text-palette-300 ">
         Acepto los
         <x-link wire:clicK="service">
             Términos de servicio
@@ -14,7 +14,7 @@
 
     <x-dialog-modal wire:model="terms">
         <x-slot name="title">
-            <h2 class="text-2xl font-semibold text-palette-200 dark:text-neutral-200">
+            <h2 class="text-2xl font-semibold text-palette-200 ">
                 Términos de Servicio
             </h2>
         </x-slot>
@@ -82,7 +82,7 @@
 
     <x-dialog-modal wire:model="privacy">
         <x-slot name="title">
-            <h2 class="text-2xl font-semibold text-palette-200 dark:text-neutral-200">
+            <h2 class="text-2xl font-semibold text-palette-200 ">
                 Política de Privacidad
             </h2>
         </x-slot>

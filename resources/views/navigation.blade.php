@@ -4,8 +4,8 @@
     } else {
         document.body.classList.remove('overflow-hidden');
     }
-})" class=" relative bg-white dark:bg-neutral-800 ">
-    <div class=" bg-palette-200 dark:bg-neutral-950 h-1">
+})" class=" relative bg-white  ">
+    <div class=" bg-palette-200  h-1">
     </div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-1">
         <div class=" flex items-center justify-between h-14">
@@ -29,19 +29,17 @@
             </div>
             <!-- cart -->
             <div class="flex items-center">
-                <a href="" :active="request() - > routeIs('')" class="relative inline-block cursor-pointer">
-                    <i
-                        class="fas fa-cart-arrow-down text-3xl {{ request()->routeIs() ? 'text-palette-400 dark:text-white' : 'text-palette-200 hover:text-palette-300 dark:text-palette-30 dark:hover:text-white' }}"></i>
+                <a href="{{ route('product.cart') }}" :active="request() - > routeIs('product.cart')" class="relative inline-block cursor-pointer">
+                    <i class="fas fa-cart-arrow-down text-3xl {{ request()->routeIs('product.cart') ? 'text-palette-400 ' : 'text-palette-200 hover:text-palette-300  ' }}"></i>
                     <div
-                        class="top-0 left-8 absolute {{ request()->routeIs() ? 'bg-palette-200 dark:bg-white' : 'bg-palette-400 dark:bg-white' }} rounded-full p-1">
+                        class="top-0 left-8 absolute {{ request()->routeIs('cart') ? 'bg-palette-200 ' : 'bg-palette-400 ' }} rounded-full p-1">
                     </div>
                 </a>
-
                 <!-- Hamburger -->
                 <div class="ml-3 flex items-center sm:hidden">
                     {{-- <x-dark-button /> --}}
                     <button @click="sidebarOpen = !sidebarOpen"
-                        class="sm:hidden inline-flex items-center justify-center p-2 rounded-md text-palette-400 dark:text-neutral-400 hover:text-palette-200 dark:hover:text-neutral-100 hover:bg-palette-10 focus:outline-none  focus:text-palette-300 dark:focus:text-white cursor-pointer transition duration-150 ease-in-out">
+                        class="sm:hidden inline-flex items-center justify-center p-2 rounded-md text-palette-400  hover:text-palette-200  hover:bg-neutral-100 focus:outline-none  focus:text-palette-300  cursor-pointer transition duration-150 ease-in-out">
                         <svg class="h-8 w-8" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                             <path :class="{ 'hidden': sidebarOpen, 'inline-flex': !sidebarOpen }" stroke-linecap="round"
                                 stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -54,14 +52,14 @@
         </div>
     </div>
     <div
-        class="hidden sm:block bg-gradient-to-r from-palette-300 via-palette-200 to-palette-300  dark:bg-gradient-to-r dark:from-neutral-950 dark:via-neutral-900 dark:to-neutral-950 mt-1">
+        class="hidden sm:block bg-gradient-to-r from-palette-300 via-palette-200 to-palette-300 mt-1">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class=" flex items-center h-8">
                 <x-nav-button-link href="{{ route('index') }}" :active="request()->routeIs('index')">
                     Inicio
                 </x-nav-button-link>
 
-                <x-nav-button-link href="" :active="request()->routeIs('')">
+                <x-nav-button-link href="{{ route('product') }}" :active="request()->routeIs('product*')">
                     Productos
                 </x-nav-button-link>
 
@@ -72,8 +70,8 @@
         </div>
     </div>
     <div
-        class=" sm:hidden bg-gradient-to-r from-palette-300 via-palette-200 to-palette-300  dark:bg-gradient-to-r dark:from-neutral-900 dark:via-neutral-950 dark:to-neutral-900 flex items-center py-2 px-6">
-        <div class="w-full rounded-lg p-0.5 dark:p-1 ">@livewire('search')</div>
+        class=" sm:hidden bg-gradient-to-r from-palette-300 via-palette-200 to-palette-300      flex items-center py-2 px-6">
+        <div class="w-full rounded-lg p-0.5  ">@livewire('search')</div>
     </div>
 
 
@@ -88,14 +86,14 @@
     <!-- Menú lateral -->
 
     <div x-show="sidebarOpen" x-cloak
-        class="fixed inset-y-0 left-0 w-4/5 bg-white dark:bg-neutral-800 max-w-sm z-50 overflow-y-auto"
+        class="fixed inset-y-0 left-0 w-4/5 bg-white  max-w-sm z-50 overflow-y-auto"
         x-transition:enter="transition ease-out duration-300 transform" x-transition:enter-start="-translate-x-full"
         x-transition:enter-end="translate-x-0" x-transition:leave="transition ease-in duration-300 transform"
         x-transition:leave-start="translate-x-0" x-transition:leave-end="-translate-x-full">
 
         <div
-            class="bg-gradient-to-r from-palette-150  to-palette-200 text-neutral-100 dark:text-neutral-300  
-        dark:bg-gradient-to-r dark:from-neutral-900 dark:via-neutral-950 dark:to-neutral-900 h-16 flex items-center ">
+            class="bg-gradient-to-r from-palette-150  to-palette-200 text-neutral-100   
+            h-16 flex items-center ">
             @if (Route::has('login'))
                 @auth
                     <div class="flex items-center px-4">
@@ -107,9 +105,9 @@
                         @endif
 
                         <div>
-                            <div class="font-medium text-base dark:text-neutral-200">{{ Auth::user()->name }}
+                            <div class="font-medium text-base ">{{ Auth::user()->name }}
                             </div>
-                            <div class="font-medium text-sm text-white dark:text-neutral-100">{{ Auth::user()->email }}
+                            <div class="font-medium text-sm text-white ">{{ Auth::user()->email }}
                             </div>
                         </div>
 
@@ -118,7 +116,7 @@
                     <div class="flex items-center px-4">
                         <!-- Authentication -->
                         <a href="{{ route('login') }}" :active="request() - > routeIs('login')"
-                            class=" hover:text-white dark:hover:text-neutral-100">
+                            class=" hover:text-white ">
                             Iniciar Sesión <i class="fas fa-sign-in-alt"></i>
                         </a>
                     </div>
@@ -163,10 +161,10 @@
         </div>
 
 
-        <div class=" bg-palette-300 dark:bg-neutral-600 my-4 h-1">
+        <div class=" bg-palette-300  my-4 h-1">
         </div>
 
-        <div class=" bg-palette-100 dark:bg-neutral-700  rounded-lg  mx-4 p-4 mb-8">
+        <div class=" bg-neutral-100   rounded-lg  mx-4 p-4 mb-8">
             {{--  @livewire('categories') --}}
             category
         </div>

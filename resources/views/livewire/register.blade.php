@@ -1,10 +1,9 @@
 <div class="py-8 px-2">
-    <div
-        class="max-w-lg mx-auto px-4 py-4 bg-black/1  rounded-md dark:shadow-none shadow-sm shadow-palette-300">
-        <p class="text-center font-bold text-palette-400 dark:text-neutral-400">
+    <div class="max-w-lg mx-auto px-4 py-4 bg-black/1   rounded-md  shadow-sm shadow-palette-300">
+        <p class="text-center font-bold text-palette-400 ">
             REGISTRO FORNUVI
         </p>
-        <hr class=" mt-4 mb-8  border-palette-200 dark:border-neutral-600">
+        <hr class=" mt-4 mb-8  border-palette-200 ">
 
         <form wire:submit="save" autocomplete="off">
             <div class="grid md:grid-cols-2 md:gap-x-2 gap-y-8">
@@ -79,7 +78,7 @@
                     </div>
                     <div>
                         @error('terms')
-                            <span class="error text-xs text-palette-400 dark:text-white">{{ $message }}</span>
+                            <span class="error text-xs text-palette-400 ">{{ $message }}</span>
                         @enderror
                     </div>
                 </div>

@@ -88,13 +88,13 @@
             <p class="loader-text">Cargando...</p>
         </div>
 
-        <div class="min-h-screen bg-palette-100 dark:bg-neutral-900">
+        <div class="min-h-screen bg-neutral-50">
 
             @include('navigation')
             {{-- @livewire('navigation') --}}
     
             <!-- Page Content -->
-            <main class=" text-palette-300 dark:text-neutral-300">
+            <main class=" text-palette-300">
                 {{ $slot }}
             </main>
     

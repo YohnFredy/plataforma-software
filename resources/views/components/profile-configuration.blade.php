@@ -4,7 +4,7 @@
             <x-slot name="trigger">
                 <span class="inline-flex rounded-md">
                     <button type="button"
-                        class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-palette-300 dark:hover:text-gray-300 focus:outline-none focus:bg-palette-300 dark:focus:bg-gray-700 active:bg-palette-100 dark:active:bg-gray-700 transition ease-in-out duration-150">
+                        class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md  bg-white  hover:text-palette-300  focus:outline-none focus:bg-palette-300  active:bg-neutral-100  transition ease-in-out duration-150">
                         {{ Auth::user()->currentTeam->name }}
 
                         <svg class="ms-2 -me-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -36,7 +36,7 @@
 
                     <!-- Team Switcher -->
                     @if (Auth::user()->allTeams()->count() > 1)
-                        <div class="border-t border-gray-200 dark:border-gray-600"></div>
+                        <div class="border-t border-gray-200 "></div>
 
                         <div class="block px-4 py-2 text-xs text-gray-400">
                             {{ __('Switch Teams') }}
@@ -74,17 +74,17 @@
         <x-slot name="content">
             <!-- Account Management -->
             <ul class=" mx-2 ">
-                <div class="block px-4 pt-2 pb-4 text-palette-400 text-xs dark:text-neutral-100">
+                <div class="block px-4 pt-2 pb-4 text-palette-400 text-xs">
                     {{ __('Manage Account') }}
                 </div>
                 
-                <div class="border-t border-palette-200 dark:border-neutral-300 rounded-lg">
+                <div class="border-t border-palette-200  rounded-lg">
                 <x-dropdown-link href="{{ route('profile.show') }}">
                     {{ __('Profile') }}
                 </x-dropdown-link>
                 </div>
 
-                <div class="border-t  border-palette-200 dark:border-neutral-300 rounded-lg">
+                <div class="border-t  border-palette-200  rounded-lg">
                 <x-dropdown-link href="">
                     Mis ordenes
                 </x-dropdown-link>
@@ -102,7 +102,7 @@
             <form method="POST" action="{{ route('logout') }}" x-data>
                 @csrf
 
-                <div class=" mx-2 border-t  border-palette-200 dark:border-neutral-300 rounded-lg">
+                <div class=" mx-2 border-t  border-palette-200  rounded-lg">
                     <x-dropdown-link href="{{ route('logout') }}" @click.prevent="$root.submit();">
                         {{ __('Log Out') }}
                     </x-dropdown-link>

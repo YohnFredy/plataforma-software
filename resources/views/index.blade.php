@@ -39,7 +39,7 @@
             <div class=" col-span-5 md:col-span-3 flex items-center ">
 
                 <div>
-                    <p class=" text-xl font-bold text-center text-palette-200 dark:text-neutral-100">Salud y Solidaridad: Un Camino hacia el Bienestar Colectivo a través de Productos Naturales</p>
+                    <p class=" text-xl font-bold text-center text-palette-200 ">Salud y Solidaridad: Un Camino hacia el Bienestar Colectivo a través de Productos Naturales</p>
 
                     <p class="text-justify mt-4">
 
@@ -97,8 +97,8 @@
         </div>
 
         <div class=" grid grid-cols-4 gap-6 md:gap-x-10 lg:gap-3 xl:gap-4 mt-10 md:mt-12">
-            <p class=" col-span-4 text-2xl font-bold text-palette-200 dark:text-neutral-200 text-center md:mb-4">Diferentes servicios. </p>
-            <div class=" col-span-4 md:col-span-2 lg:col-span-1 bg-palette-200 dark:bg-neutral-700 rounded-md shadow-md">
+            <p class=" col-span-4 text-2xl font-bold text-palette-200  text-center md:mb-4">Diferentes servicios. </p>
+            <div class=" col-span-4 md:col-span-2 lg:col-span-1 bg-palette-200  rounded-md shadow-md">
                 <img class=" rounded-t-md" src="https://cdn.pixabay.com/photo/2020/08/05/20/47/fruits-5466407_1280.jpg"
                     alt="">
                 <div class="py-6 px-4">
@@ -112,7 +112,7 @@
                 </div>
             </div>
 
-            <div class=" col-span-4 md:col-span-2 lg:col-span-1 bg-palette-300 dark:bg-neutral-700 rounded-md shadow-md">
+            <div class=" col-span-4 md:col-span-2 lg:col-span-1 bg-palette-300  rounded-md shadow-md">
                 <img class=" rounded-t-md" src="https://cdn.pixabay.com/photo/2019/03/09/16/40/hands-4044426_1280.jpg"
                     alt="">
                 <div class="py-6 px-4">
@@ -126,7 +126,7 @@
                 </div>
             </div>
 
-            <div class="col-span-4 md:col-span-2 lg:col-span-1 bg-palette-400 dark:bg-neutral-700 rounded-md shadow-md">
+            <div class="col-span-4 md:col-span-2 lg:col-span-1 bg-palette-400  rounded-md shadow-md">
                 <img class=" rounded-t-md" src="https://cdn.pixabay.com/photo/2017/07/31/11/21/people-2557399_1280.jpg"
                     alt="">
                 <div class="py-6 px-4">
@@ -139,7 +139,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-span-4 md:col-span-2 lg:col-span-1 bg-palette-500 dark:bg-neutral-700 rounded-md shadow-md">
+            <div class="col-span-4 md:col-span-2 lg:col-span-1 bg-palette-500  rounded-md shadow-md">
                 <img class=" rounded-t-md" src="https://cdn.pixabay.com/photo/2023/11/18/16/09/pears-8396722_1280.jpg"
                     alt="">
                 <div class="py-6 px-4">

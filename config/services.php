@@ -13,6 +13,15 @@ return [
     | a conventional file to locate the various service credentials.
     |
     */
+    'multilevel' => [
+        'minimum_pts' => env('MINIMUM_PTS'),
+    ],
+
+    'bold' => [
+        'api_key' => env('BOLD_API_KEY'),
+        'secret_key' => env('BOLD_SECRET_KEY'),
+        'redirection_url' => env('BOLD_REDIRECTION_URL'),
+    ],
 
     'postmark' => [
         'token' => env('POSTMARK_TOKEN'),

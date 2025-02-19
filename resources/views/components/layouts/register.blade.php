@@ -22,7 +22,7 @@
 <body class="font-sans antialiased">
     <x-banner />
 
-    <div class="min-h-screen bg-white dark:bg-black tracking-wide">
+    <div class="min-h-screen bg-white  tracking-wide">
         <!-- Page Content -->
         <main>
             {{ $slot }}

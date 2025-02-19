@@ -4,14 +4,8 @@
     $classes =
         $active ?? false
             ? 'block w-full ps-3 pe-4 py-1 border-l-8 border-palette-200  text-start text-base font-medium text-white bg-gradient-to-r from-palette-300  to-palette-150  focus:outline-none focus:text-white focus:bg-palette-300 focus:border-palette-150  
-            dark:border-neutral-500 dark:focus:border-neutral-300 
-            dark:text-neutral-300 dark:focus:text-neutral-100
-            dark:bg-gradient-to-r dark:from-neutral-900  dark:to-neutral-950
             transition duration-150 ease-in-out'
             : 'block w-full ps-3 pe-4 py-1 border-l-8 border-transparent text-start text-base font-medium text-palette-300 hover:text-palette-200  hover:bg-neutral-200  hover:border-palette-200  focus:outline-none focus:text-palette-400  focus:bg-nuetral-200  focus:border-palette-150 
-            dark:text-neutral-300 dark:hover:text-neutral-100
-             dark:hover:bg-neutral-900 dark:hover:border-neutral-400
-            dark:focus:text-neutral-300 dark:focus:bg-neutral-950 dark:focus:border-neutral-300
             transition duration-150 ease-in-out';
 @endphp
 

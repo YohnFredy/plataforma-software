@@ -1,6 +1,6 @@
 <div class="lateral-menu mt-6">
 
-    <ul class="divide-y divide-neutral-50 dark:divide-neutral-500 mt-6">
+    <ul class="divide-y divide-neutral-50  mt-6">
 
         <li>
             <x-lateral-nav-link href="{{ route('office.index') }}" :active="request()->routeIs('office.index')">
