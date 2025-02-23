@@ -24,7 +24,7 @@ return new class extends Migration
             $table->text('information')->nullable();
             $table->boolean('is_physical')->default(true);
             $table->integer('stock')->nullable(); // Solo para productos físicos
-            $table->boolean('allows_backorder')->default(false); 
+            $table->boolean('allow_backorder')->default(false); 
             $table->foreignId('category_id')->nullable()->constrained()->onUpdate('cascade')->onDelete('set null');
             $table->foreignId('brand_id')->nullable()->constrained()->onUpdate('cascade')->onDelete('set null');
             $table->boolean('is_active')->default(true);

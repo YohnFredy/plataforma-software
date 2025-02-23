@@ -1,13 +1,11 @@
 <?php
 
-use App\Http\Controllers\Office\IndexController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\WebhookController;
 use App\Livewire\Cart;
 use App\Livewire\CreateOrder;
-use App\Livewire\Office\BinaryTree;
-use App\Livewire\Office\UnilevelTree;
 use App\Livewire\Products;
+use App\Livewire\Prueba;
 use App\Livewire\Register;
 use App\Livewire\ShowProduct;
 use Illuminate\Support\Facades\Route;
@@ -20,7 +18,7 @@ Route::get('/', function () {
 Route::get('productos', Products::class)->name('product');
 Route::get('producto/{product}', ShowProduct::class)->name('product.show');
 Route::get('carrito', Cart::class)->name('product.cart');
-
+Route::get('prueba', Prueba::class)->name('prueba');
 
 
 Route::middleware([
@@ -31,10 +29,6 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
-
-    Route::get('office/index', [IndexController::class, 'index'])->name('office.index');
-    Route::get('binary/tree', BinaryTree::class)->name('office.binary-tree');
-    Route::get('unilevel/tree', UnilevelTree::class)->name('office.unilevel-tree');
 
     Route::get('orders', [OrderController::class, 'index'])->name('orders.index');
     Route::get('orders/create', CreateOrder::class)->name('orders.create');

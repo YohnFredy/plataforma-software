@@ -1,13 +1,13 @@
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-    <div class=" grid grid-cols-10 gap-4 md:gap-10 mt-6 mb-10">
+    <div class=" grid grid-cols-10 gap-4 md:gap-6 mt-6 mb-10">
         <div class="hidden sm:block sm:col-span-4 md:col-span-3 lg:col-span-3 xl:col-span-2 ">
             @livewire('categories')
         </div>
 
         <div class=" col-span-10 sm:col-span-6 md:col-span-7 lg:col-span-7 xl:col-span-8 ">
 
-            <div class="grid grid-cols-12 gap-2 sm:gap-3 md:gap-4" wire:init="loadPost">
+            <div class="grid grid-cols-12 gap-4" wire:init="loadPost">
                 @if (count($products) > 0)
                     @foreach ($products as $product)
                         <div class="col-span-6 md:col-span-6 lg:col-span-4 xl:col-span-3">
